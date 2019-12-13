@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kid21"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/aa"
+        android:id="@+id/logo"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To our Kindergarten"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/logo"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/t1"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Learning has become interactive !"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/t1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:id="@+id/t2"></TextView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/t2"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorRed"
+        android:text="Join Us Now !"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:id="@+id/signButton"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/signButton"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@android:color/holo_green_dark"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:id="@+id/lgnbtn"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp">
+    </Button>
+
+</RelativeLayout>

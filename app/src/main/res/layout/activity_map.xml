@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/iii"
+        android:src="@drawable/im">
+
+    </ImageView>
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lip"
+        android:src="@drawable/aa">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bus Tracking"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/lip"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/ti"></TextView>
+
+    <ImageView
+        android:scaleType="fitStart"
+        android:layout_below="@id/iii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/route">
+
+    </ImageView>
+
+
+</RelativeLayout>

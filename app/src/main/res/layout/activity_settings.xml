@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Child Profile Information"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        ></TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorPrimaryDark"/>
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/us"
+    android:layout_below="@+id/profile_image"
+    android:hint="Child Name"
+    android:textAlignment="center"
+    android:padding="6dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:textColor="@color/colorPrimaryDark"
+    android:inputType="textMultiLine"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usss"
+        android:layout_below="@+id/us"
+        android:hint="Child Age"
+        android:textAlignment="center"
+        android:padding="6dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="textMultiLine"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ps"
+        android:layout_below="@+id/usss"
+        android:hint="Parent Phone Number"
+        android:textAlignment="center"
+        android:padding="6dp"
+        android:textSize="16sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="textMultiLine"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailSet"
+        android:layout_below="@+id/ps"
+        android:hint="Parent Email"
+        android:textAlignment="center"
+        android:padding="6dp"
+        android:textSize="16sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="textMultiLine"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/EmailSet"
+        android:text="Create Profile"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/update"></Button>
+
+
+</RelativeLayout>
