@@ -29,10 +29,24 @@
 
     </ImageView>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Press On Item To Show Details :"
+        android:id="@+id/gra"
+        android:textStyle="bold"
+        android:layout_below="@+id/gr"
+        android:layout_margin="6dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="6dp"
+        ></TextView>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/gr"
+        android:layout_below="@+id/gra"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:id="@+id/l2">

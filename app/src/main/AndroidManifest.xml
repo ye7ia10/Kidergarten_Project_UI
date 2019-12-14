@@ -5,15 +5,16 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/aa"
-        android:label="@string/app_name"
+        android:label="Kindergarten"
         android:roundIcon="@drawable/aa"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Map"></activity>
+        <activity android:name=".videos"></activity>
+        <activity android:name=".Map" />
         <activity android:name=".Admin" />
         <activity android:name=".services" />
         <activity android:name=".settings" />
-        <activity android:name=".Login"></activity>
+        <activity android:name=".Login" />
         <activity android:name=".SignUp" />
         <activity android:name=".Welcome">
             <intent-filter>

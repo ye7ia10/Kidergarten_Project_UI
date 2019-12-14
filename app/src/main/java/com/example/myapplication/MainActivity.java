@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("The Kindergarten");
         setSupportActionBar(toolbar);
 
         ViewPager viewPager = findViewById(R.id.view_pager);
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, Login.class);
                 startActivity(intent);
+                finish();
 
         }
         if (item.getItemId() == R.id.settings){

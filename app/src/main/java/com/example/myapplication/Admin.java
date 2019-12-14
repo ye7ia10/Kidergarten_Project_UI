@@ -10,6 +10,7 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class Admin extends AppCompatActivity {
@@ -18,12 +19,13 @@ public class Admin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
-        Button btn = (Button) findViewById(R.id.lgout);
+        ImageButton btn = (ImageButton)findViewById(R.id.lgout);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin.this, Login.class);
                 startActivity(intent);
+                finish();
             }
         });
 
